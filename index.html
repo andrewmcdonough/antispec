@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script type='text/javascript' src='javascripts/handlebars.js'></script>
+    <script type='text/javascript' src='javascripts/jquery.js'></script>
+    <script type='text/javascript' src='javascripts/app.js'></script>
+    <link rel='stylesheet' href='stylesheets/bootstrap.min.css'></style>
+    <link rel='stylesheet' href='stylesheets/app.css'></style>
+    <script id="spec-template" type="text/x-handlebars-template">
+
+<h1>Job Spec: {{seniority}} {{ruby_or_rails}} {{job_title}} at {{company_name}}</h1>
+<div id="spec">
+  {{company_name}} are a {{company_type}} based in {{place}}.  We are looking for a {{seniority}} {{ruby_or_rails}} {{job_title}} to join our team.
+  <br>
+  <h2>Requirements</h2>
+  <ul>
+    <li>{{years_ruby}}+ years ruby experience</li>
+    <li>{{years_rails}}+ years rails experience</li>
+    <li>{{driven_development}} advocate</li>
+    <li>Must use {{testing_framework}} for testing</li>
+    <li>{{integration_testing}}</li>
+    <li>Version control using git</li>
+    <li>HTML, CSS</li>
+    <li>Javascript</li>
+    <li>Database management in {{database}}</li>
+    <li>Experience of NoSQL databases, especially {{nosql}}</li>
+    <li>{{sysadmin}}</li>
+  </ul>
+  <h2>Nice to have</h2>
+  <ul>
+    <li>Experience of {{another_language}}</li>
+    <li>An interest in functional programming in {{functional_language}}</li>
+  </ul>
+  <h2>To apply</h2>
+  <p>To apply, please send a copy of your CV, a link to your Github page to</p>
+</div>
+    </script>
+  </head>
+  <body>
+    <div class='container' id='spec'>
+    </div>
+    <div class='container' id='dislike'>
+      We don't really like job specs like this either, so we didn't write one.  We are hiring though, so click here to find out a bit more about us.
+    </div>
+  </div>
+  </body>
+</html>
